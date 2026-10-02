@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 24px;
+  font-family: system-ui, sans-serif;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  max-width: 1008px;
+  margin-inline: auto;
+}
+
+#player {
+  display: contents;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+main .player {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 480px;
+  aspect-ratio: auto;
+  padding: 0 12px 4px;
+  background-color: #212121;
+  border-radius: 6px;
+}
+
+[data-media-provider] video {
+  width: 100%;
+}
+
+pre {
+  margin-top: 32px;
+  padding: 12px;
+  background: #f4f4f4;
+  border-radius: 4px;
+}
