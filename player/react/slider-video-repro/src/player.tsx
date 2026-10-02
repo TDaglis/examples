@@ -41,7 +41,8 @@ function Example({ title, previewSrc }: { title: string; previewSrc: string }) {
   return (
     <section>
       <h2>{title}</h2>
-      <MediaPlayer className="player" src={src} crossOrigin load="eager">
+      {/* StackBlitz previews are cross-origin isolated, so media must be loaded with CORS. */}
+      <MediaPlayer className="player" src={src} crossOrigin="anonymous" load="eager">
         <MediaProvider />
         <TimeSlider.Root className="vds-time-slider vds-slider">
           <TimeSlider.Track className="vds-slider-track" />
